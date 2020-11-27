@@ -1,5 +1,6 @@
 html {
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,25 +21,38 @@ header {
     justify-content: space-between;
 }
 
-.header-left {
+.header-left,
+.header-right {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    height: 75px
 }
 
 #search-area {
+    display: inline-block;
     height: 40px;
-    width: 500px;
+    width: 600px;
     border-radius: 45px;
     border: 1px solid #d9d9d9;
 }
 
 #google-logo-div {
-    height: 60px;
+    height: 40px;
     width: 100px;
+    margin: 40px 40px 25px 40px;
 }
 
 .google-logo {
     width: 100%;
     height: auto;
+    align-self: center;
 }
+
+
+/* .header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px
+} */
