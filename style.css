@@ -16,10 +16,11 @@ body {
 header {
     position: relative;
     height: 150px;
-    border-bottom: 0.1px solid #e7ecf0;
+    border-bottom: 0.2px solid #e7ecf0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header-left,
@@ -27,7 +28,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 75px
+    height: 75px;
 }
 
 #search-area {
@@ -36,6 +37,10 @@ header {
     width: 600px;
     border-radius: 45px;
     border: 1px solid #d9d9d9;
+}
+
+#search-area:hover {
+    box-shadow: 1px 2px lightgrey;
 }
 
 #google-logo-div {
@@ -86,8 +91,27 @@ header {
     flex-direction: row;
     align-items: center;
     height: 40px;
-    padding: 0 auto;
-    margin-left: -570px;
+    margin-left: -870px;
     margin-top: 20px;
-    z-index: 10;
+}
+
+#lower-menu p {
+    display: inline-block;
+    padding: 0 auto;
+}
+
+.menu-images {
+    height: 20px;
+    padding: 0 auto;
+}
+
+#lower-menu {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
 }
