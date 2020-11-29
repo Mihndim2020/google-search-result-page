@@ -14,6 +14,7 @@ body {
 }
 
 header {
+    position: relative;
     height: 150px;
     border-bottom: 0.1px solid #e7ecf0;
     display: flex;
@@ -71,9 +72,22 @@ header {
     font-weight: 900;
     text-align: center;
     border-radius: 50%;
+    margin: 0 50px;
 }
 
 .gmail {
     height: auto;
     margin: 0 auto;
+}
+
+.search-area-icons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    padding: 0 auto;
+    margin-left: -570px;
+    margin-top: 20px;
+    z-index: 10;
 }
