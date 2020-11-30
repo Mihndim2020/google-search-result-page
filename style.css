@@ -97,7 +97,7 @@ header {
 
 #lower-menu p {
     display: inline-block;
-    padding: 0 auto;
+    padding: 10px auto;
 }
 
 .menu-images {
@@ -114,4 +114,5 @@ header {
     height: 100px;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
 }
